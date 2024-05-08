@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let isUserReady = confirm("¿Estás listo?");
+console.log(isUserReady);
+if (isUserReady) {
+    alert("¡Usuario listo!");
+}
+let gate = prompt("Elegir la puerta: a, b, o c");
+let win = false;
+
+switch (gate) {
+    case "a":
+        alert("Puerta A: Vacía");
+        break;
+    case "b":
+        alert("Puerta B: Premio Mayor");
+        win = true;
+        break;
+    case "c":
+        alert("Puerta C: Vacía");
+        break;
+    default:
+        alert("No existe la Puerta " + String(gate));
+}
+
+if (win) {
+    alert("¡Ganador!");
+}
+
+
+
+
+
+
+let firstNumber = Number(prompt("Introduce el primer número: "));
+let secondNumber = Number(prompt("Introduce el segundo número: "));
+let operand = prompt("Introduce el operando (+, -, * o /)");
+let result;
+
+if (!Number.isNaN(firstNumber) && !Number.isNaN(secondNumber)) {
+    switch (operand) {
+        case "+": result = firstNumber + secondNumber; break;
+        case "-": result = firstNumber - secondNumber; break;
+        case "*": result = firstNumber * secondNumber; break;
+        case "/": result = firstNumber / secondNumber; break;
+        default: result = "Error: operando desconocido";
+    }
+} else {
+    result = "Error: al menos uno de los valores ingresados no es un número";
+}
+alert(result);
+let names = [];
+let isOver = false;
+while (!isOver) {
+    let name = prompt("Ingresa otro nombre o presiona cancelar.");
+    if (name != null) {
+        names.push(name);
+    } else {
+        isOver = true;
+    }
+}
+
+for (let i = 0; i < names.length; i++){
+    console.log(names[i]);
+}
+    </script>
+</body>
+</html>
