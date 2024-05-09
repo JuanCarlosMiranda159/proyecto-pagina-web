@@ -5,38 +5,40 @@
     background-color:;
 }
 /*contenedor-cabezara-bottom*/
-
-                    .contenedor-cabezera{
+.cabezera{
     width: 100%;
     height: auto;
-    background-color: blue;
-    height:222px ;
-    margin:;
+    background-color: red;
+}
+
+.contenedor-cabezera{
+    width: 100%;
+    height: auto;
+   display: flex;
+    height: auto ;
+    justify-content:end;
     flex-direction: row-reverse;
-    padding:0px;
+
+}
+.contenedor-cabezera {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between; 
 }
 
-.contenedor-logo
-{
-width: 50%;
-height:;   
-padding:1px; 
-}
-.imagen-logo
-{
-    width:45% ;
-    height:auto;
+.contenedor-logo {
+    width: 25%;
+    height: auto;
     padding: 1px;
- }
-.contenedor-boton
-{
-width:20%;
-height:auto;
-border:1px;
-padding:1px;
-float:right;
-background-color:red;
+}
 
+.contenedor-boton {
+    width: 25%;
+    height: auto;
+    border: 1px solid black;
+    padding: 1px;
+    background-color: red;
 }
 .boton-usuario
 {
@@ -60,14 +62,12 @@ padding: 50px ;
                 /*contenedor-lista-ordenada*/
 .contenedor-lista
 {
-    width:100%;
-    height:;
-    align-content:center;
-    display:flex;
-    text-decoration:none;
-  border: 1px solid #ccc;
-  padding: 1px;
-   
+    width: 100%;
+    
+    margin: 0 auto; 
+    overflow-x: auto; 
+    overflow-y: visible; 
+    white-space:nowrap; 
    
 }
 ul{
@@ -76,7 +76,7 @@ ul{
     justify-content:center ;
     align-items:end;
     list-style: none;
-    color: ;
+   
 }
 li a
 {
@@ -85,18 +85,14 @@ text-decoration:none;
 padding:3px;
 font-family:'Times New Roman',Times,serif;
 background-color:#da291c;
-width:7%;
+width:100%;
 height:auto ;
-display:block;
 border:1px;
 font-size:12px;
 font-family: 'Franklin Gothic Medium','Arial Narrow', Arial, sans-serif;
 color: white;
 }
 
-
-
-                /*contenedor de informacion y contenedor lateral*/
 
                     /*contenido-de-pagina*/
 
@@ -114,6 +110,7 @@ color: white;
     height:auto ;
     padding:10px;
     border-radius:10px;
+    background-image: url(/proyecto-pagina-web/img/imagen\ publicitaria.png);
 
 }
 .contenedor-equipos
@@ -121,7 +118,7 @@ color: white;
     display:flex;
     width:100%;
     height:auto;
-    padding: 50px;
+    padding:15px;
     background-color:beige ;
 }
 .contenedor-equipos2
@@ -129,7 +126,7 @@ color: white;
     display:flex;
     width:100%;
     height:auto;
-    padding:50px;
+    
 }
 
 
@@ -137,60 +134,47 @@ color: white;
     width:100%;
     height: auto;
     border-radius:15px;
+    display: ;
+    padding: 5px;
+    
 }
-.imagenes{
-    width:25% ;
-    margin:15px ;
-    border-radius: 10px;
-    height: auto;
-    background-color: beige;
 
-}
 .botondimg{
     width:100%;
     display:flex;
     justify-content: center;
-    border-radius:10px;
+    border-radius:25px;
     font-family: 'Times New Roman', Times, serif;
-    padding:
+    padding:1px;
+    height: auto;
+
+
 }
 
                         /*contenedor-lateral*/
 
-.contenedor-lateral{ 
-    width:40%;
-    background-color:;
-    height:auto;
-    float:right;
-    padding-top:50px;
-    display: flex;
-    
-}
-.contenedor-deseccionylateral
-{
-    width:100%;
-    height:auto;
-    background-color:beige;
 
-  
-}
+
 .contenedor-seccion
 {
     width:100%;
     height:auto;
-    border-color:2px;
+    
     border:1px ;
     background-color:beige;
-    padding-top: ;
+    padding:1px ;
+
+
+   
  }
 .contenedor-formulario{
     width:100%;
     height:100%;
-    background-color:red;
+    background-color:#da291c;
     text-align: center;
     padding: 10px;
     border-bottom:0;
-    border-radius: 25px;
+    border-radius:;
 
     
 }
@@ -203,19 +187,8 @@ input{
     box-shadow: 0 0 5px rgba (0, 0, 0, 0.1);
     margin-top: 10px;
 }
-.boton{
-    padding:1px;
-    border-radius:10px;
-    color: black;
-    width:50% ;
-    
-}
-.tituloformulario{
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight:bold;
-}
-                        /*contenedor pie de pagina*/
+
+                  /*contenedor pie de pagina*/
 .contenedor-piepagina
 {
 width: 100%;
@@ -223,13 +196,43 @@ height:auto;
 background-color:red;
 }
 
-.contenedor-texto{
- text-align: center;   
- color: white;
 
+.contenedor-imagenes{
+margin: 10px;
+margin-left: 25px;
 }
-.Titulo2{
-    font-family: 'Times New Roman', Times, serif;
+.centrando-texto{
+    padding:70px;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    justify-content:center;
+    background-color: beige;
     
 }
+.botones-servicio{
+   
+    
+    padding: 10px;
+    height:px;
+    background-color: rgb(235, 247, 255);
+    width:33.33%;
+    border-radius: 25px;
+}
+.publicidad{
+             width:70% ;
+            float: right;
+        
+            display: flex;
+}
+.seleccionar{
+    
+    width:33.33%;
+    background-color:rgb(214, 90, 90);
+    height: auto;
+    border-radius: 25px;
+    justify-content: space-between; 
+    flex-direction: row-reverse;
+    display: flex;
 
+}
